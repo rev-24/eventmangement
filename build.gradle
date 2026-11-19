@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+task copyWebsite(type: Copy)
+{
+
+    from 'src/main/resources/website'
+
+    into 'docs'
+
+}
